@@ -4,27 +4,27 @@ import logo6 from "./images/meal.svg";
 import logo7 from "./images/grilled-tomatoes.svg";
 // import Pagination from "./Pagination";
 // import ReactPaginate from "react-paginate";
-import Pagination from "react-js-pagination";
-import ReactDOM from "react-dom";
+// import Pagination from "react-js-pagination";
+// import ReactDOM from "react-dom";
 
 // const LatestArticles = () => {
 class LatestArticles extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activePage: 2,
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     activePage: 2,
+  //   };
+  // }
 
-  handlePageChange(pageNumber) {
-    console.log(`active page is ${pageNumber}`);
-    this.setState({ activePage: pageNumber });
-  }
+  // handlePageChange(pageNumber) {
+  //   console.log(`active page is ${pageNumber}`);
+  //   this.setState({ activePage: pageNumber });
+  // }
   render() {
     return (
       <>
         <div className="min-[375px]:flex-wrapS max-[1440px] w-[1440px]   absolute top-[1700px] bg-[#FFFFFF]  left-0 ">
-          <h1 className="text-[#0E2368] text-[56px] mb-3 flex ml-[165px] content-start  tracking-[0.04em] leading-[42px]  font-[Source_Sans_Pro] ">
+          <h1 className="text-[#0E2368] text-[56px] mb-[40px] flex ml-[165px] content-start  tracking-[0.04em] leading-[42px]  font-[Source_Sans_Pro] ">
             Latest Articles
           </h1>
           <div className="flex flex-row justify-items-center justify-center w-full  ">
@@ -78,13 +78,13 @@ class LatestArticles extends Component {
               </div>
             </div>
             <div>
-              <Pagination
+              {/* <Pagination
                 activePage={this.state.activePage}
                 itemsCountPerPage={3}
                 totalItemsCount={6}
                 pageRangeDisplayed={3}
                 onChange={this.handlePageChange.bind(this)}
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -92,5 +92,5 @@ class LatestArticles extends Component {
     );
   }
 }
-ReactDOM.render(<LatestArticles />, document.getElementById("root"));
+// ReactDOM.render(<LatestArticles />, document.getElementById("root"));
 export default LatestArticles;

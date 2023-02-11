@@ -7,14 +7,17 @@ const Home = () => {
   return (
     <div className="min-[375px] max-[1440px] h-[804px] w-[1440px] absolute left-0 top-0 bg-[#FFFFFF] ">
       <div className="flex flex-row   h-[804px] w-[1440px] left-[0px] top-[0px] rounded-none ">
-        <div className=" ml-[100px] mt-[10px] p-28">
+        <div className=" ml-[100px] mt-[10px]  p-28 flex flex-col justify-center text-justify  ">
           <div className="top-[33px] mb-[70px] left-[100px] ">
             <img src={logo1} alt="logo" />
           </div>
           <div className=" text-justify">
-            <div className="mt-[20px] mb-[20px] font-sans text-[62px] top-[227px] tracking-3 text-[#0E2368] not-italic leading-[69px] font-[700]  ">
+            <div className="mt-[20px] mb-[20px]  font-sans text-[62px] top-[227px] tracking-3 text-[#0E2368] not-italic leading-[69px] font-[700]  ">
               Discover the
-              <em className="text-[#E23744] not-italic "> Best</em>
+              <span className="text-[#E23744] pr-[16px] not-italic ">
+                {" "}
+                Best
+              </span>
               Food and Drinks
             </div>
             <p className="h-[55px] mt w-[345px] left-[100px] top-[460px] rounded-none">
